@@ -32,12 +32,7 @@ class BinarySearchTree{
 }
 
 let b = new BinarySearchTree()
-b.insert(8)
-b.root
-b.insert(33)
-b.root
-b.insert(3)
-b.insert(43)
-b.insert(2)
-b.insert(11)
-b.insert(7)
+let test = [7, 15, 5 ,3, 9, 8, 10, 13, 12, 14, 20, 18, 25]
+test.map(value => b.insert(value))
+console.log(b.root);
+
