@@ -1,4 +1,8 @@
-const Graph = require('./graph/Graph')
+const Graph = require('./graph/Graph.js')
+
+function printNode(value){
+    console.log('Visited vertex:' + value)
+}
 
 let graph = new Graph()
 let myVertices = 'ABCDEFGHI'.split('')
@@ -14,5 +18,5 @@ graph.addEdge('B', 'E')
 graph.addEdge('B', 'F')
 graph.addEdge('E', 'I')
 
-console.log(graph.toString);
-BinarySearchTree
+// console.log(graph.toString());
+graph.bfs(myVertices[0], printNode)
